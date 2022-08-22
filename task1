@@ -1,0 +1,32 @@
+//USING FOR LOOP
+function sumTo(n) {
+    let sum = 0;
+    for (let i = 0; i < n; i++) {
+        sum += i;
+    }
+    console.log(sum);
+}
+sumTo(5);
+
+//USING RECURSION
+
+function sumTo(n) {
+    sum = sum + sum(n - 1);
+};
+
+sumTo(5);
+function sumTo(n) {
+    if (n == 1) { return 1; }
+    return n + sumTo(n - 1);
+}
+
+console.log(sumTo(100));
+
+
+//USING FORMULA
+
+function sumTo(n) {
+    return n * (n + 1) / 2;
+}
+
+console.log(sumTo(40));
